@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Magic Drinks - Serviço de Bebidas para Festas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #ff0000;
+        }
+
+        nav {
+            background-color: #ff0000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #ff0000;
+        }
+
+        .services, .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service, .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ff0000;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3, .gallery-item h3 {
+            color: #ff0000;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .menu-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .menu-section table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .menu-section table, th, td {
+            border: 1px solid #ff0000;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 300px;
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff0000;
+            color: white;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Magic Drinks</h1>
+        <p>Serviço Premium de Bebidas para Festas e Eventos</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre Nós</a>
+        <a href="#services">Serviços</a>
+        <a href="menu.html" target="_self" >Cardapio</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Contato & Reservas</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>Sobre Nós</h2>
+        <p>Na Magic Drinks, criamos experiências únicas e inesquecíveis em eventos desde 2024, com drinks feitos com criatividade e ingredientes de alta qualidade. Nossa equipe de bartenders experientes oferece mais do que bebidas, proporcionando conexões e momentos especiais. Com atenção aos detalhes e atendimento personalizado, atendemos a diversos tipos de eventos, sempre comprometidos em superar as expectativas dos nossos clientes.
+            .</p>
+    </div>
+
+    <div class="container" id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Bebidas Exclusivas</h3>
+                <p>Coquetéis criados exclusivamente para seu evento, com ingredientes frescos e de alta qualidade.</p>
+            </div>
+            <div class="service">
+                <h3>Atendimento Personalizado</h3>
+                <p>Bartenders experientes, prontos para atender seus convidados com profissionalismo e simpatia.</p>
+            </div>
+            <div class="service">
+                <h3>Bar Temático</h3>
+                <p>Personalize o bar de acordo com o tema da sua festa e surpreenda seus convidados.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="gallery">
+        <h2>Galeria de Drinks</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <h3>Drink Colorido</h3>
+                <img src="https://i.pinimg.com/564x/41/d8/4d/41d84d9aa9aeb166a82efc9c4bc09664.jpg" alt="Drink Colorido">
+            </div>
+            <div class="gallery-item">
+                <h3>Coquetel Clássico</h3>
+                <img src="https://i.pinimg.com/564x/ca/53/e5/ca53e52efedabaa20b34ffa85cab778c.jpg" alt="Coquetel Classico">
+            </div>
+            <div class="gallery-item">
+                <h3>Drink de Verão</h3>
+                <img src="https://i.pinimg.com/564x/e8/b8/be/e8b8be8054b0edd1f338390d71f38be8.jpg" alt="Drink de Verão">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contato & Reservas</h2>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <input type="text" name="telefone" placeholder="Seu Telefone" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem ou Pedido de Reserva" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Ou entre em contato diretamente pelo nosso email: <strong>jonathanssilva06@gmail.com</strong></p>
+        <p>Telefone: (41) 99877-0483</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Magic Drinks - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
